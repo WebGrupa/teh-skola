@@ -6,5 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_activity_kalendar">KalendarActivity</string>
+    <string name="title_activity_raspored">RasporedActivity</string>
+    <string name="title_activity_testovi">TestoviActivity</string>
 
 </resources>
