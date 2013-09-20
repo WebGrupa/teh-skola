@@ -26,6 +26,10 @@
             android:name="net.tehnickaskola.MenuActivity"
             android:label="@string/title_activity_menu" >
         </activity>
+        <activity
+            android:name="net.tehnickaskola.KalendarActivity"
+            android:label="@string/title_activity_kalendar" >
+        </activity>
     </application>
 
 </manifest>
