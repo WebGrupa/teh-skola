@@ -38,6 +38,14 @@
             android:name="net.tehnickaskola.TestoviActivity"
             android:label="@string/title_activity_testovi" >
         </activity>
+        <activity
+            android:name="net.tehnickaskola.ObavijestiActivity"
+            android:label="@string/title_activity_obavijesti" >
+        </activity>
+        <activity
+            android:name="net.tehnickaskola.BiljeskeActivity"
+            android:label="@string/title_activity_biljeske" >
+        </activity>
     </application>
 
 </manifest>

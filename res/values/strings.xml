@@ -8,5 +8,7 @@
     <string name="title_activity_kalendar">KalendarActivity</string>
     <string name="title_activity_raspored">RasporedActivity</string>
     <string name="title_activity_testovi">TestoviActivity</string>
+    <string name="title_activity_obavijesti">ObavijestiActivity</string>
+    <string name="title_activity_biljeske">BiljeskeActivity</string>
 
 </resources>
