@@ -43,9 +43,9 @@ public class ImageAdapter extends BaseAdapter {
         }
         
         private Integer[] mThumbIds = {
-        		R.drawable.un,
-        		R.drawable.unt,
-        		R.drawable.unti,
-        		R.drawable.untit 
+        		R.drawable.kalendar,
+        		R.drawable.obavijesti,
+        		R.drawable.raspored,
+        		R.drawable.testovi
     };
 }
