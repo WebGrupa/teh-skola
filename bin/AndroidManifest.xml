@@ -46,6 +46,10 @@
             android:name="net.tehnickaskola.BiljeskeActivity"
             android:label="@string/title_activity_biljeske" >
         </activity>
+        <activity
+            android:name="net.tehnickaskola.DialogActivity"
+            android:label="@string/title_activity_dialog" >
+        </activity>
     </application>
 
 </manifest>

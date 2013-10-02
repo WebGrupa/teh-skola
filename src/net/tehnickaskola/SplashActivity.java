@@ -5,10 +5,15 @@ package net.tehnickaskola;
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 /**
 import android.content.Intent;
 import android.view.View;
@@ -18,6 +23,8 @@ import android.widget.Button;
 
 
 public class SplashActivity extends Activity {
+
+	final Context context = this;
 
 	 private static int SPLASH_TIME_OUT = 3000;
 	
@@ -35,30 +42,40 @@ public class SplashActivity extends Activity {
             @Override
             public void run() {
                 
-                Intent i = new Intent(SplashActivity.this, MenuActivity.class);
-                startActivity(i);
+
+            	   // custom dialog
+            	  final Dialog dialog = new Dialog(context);
+            	   dialog.setContentView(R.layout.dialog);
+            	   dialog.setTitle("Odaberi smjer i razred");
+            	   
+            	   Button ok = (Button) dialog.findViewById(R.id.button1);
+         		  
+         		  ok.setOnClickListener(new OnClickListener() {
+         		   
+         		   public void onClick(View v) {
+         		    // TODO Auto-generated method stub
+         		    Intent intent = new Intent(SplashActivity.this, MenuActivity.class);
+         		    startActivity(intent);
+         		   finish();
+         		   }
+         		  });
+            	 
+            	   dialog.show();
+            	   
+            	   
  
                 
-                finish();
+                
             }
         }, SPLASH_TIME_OUT);
 		
-	/**	
-	Button ok = (Button) findViewById(R.id.button1);
-	  
-	  ok.setOnClickListener(new OnClickListener() {
-	   
-	   public void onClick(View v) {
-	    // TODO Auto-generated method stub
-	    Intent intent = new Intent(SplashActivity.this, MenuActivity.class);
-	    startActivity(intent);
-	   }
-	  });
-	  */
 	  
 }
 	
+
 	
+	
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

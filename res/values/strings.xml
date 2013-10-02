@@ -10,25 +10,28 @@
     <string name="title_activity_testovi">TestoviActivity</string>
     <string name="title_activity_obavijesti">ObavijestiActivity</string>
     <string name="title_activity_biljeske">BiljeskeActivity</string>
+
     <string-array name="zanimanje">
-        <item >Autolimar</item>
-        <item >Autoelektričar</item>
-        <item >Automehaničar</item>
-        <item >Elektroinstalater</item>
-        <item >Elektromehaničar</item>
-        <item >Elektrotehničar</item>
-        <item >Računalni tehničar u strojarstvu</item>
-        <item >Strojobravar</item>
-        <item >Tehničar za elektroenergetiku</item>
-        <item >Tehničar za mehatroniku</item>
-         <item >Tehničar za računalstvo</item>
-        <item >Tokar</item>
+        <item>Autolimar</item>
+        <item>Autoelektričar</item>
+        <item>Automehaničar</item>
+        <item>Elektroinstalater</item>
+        <item>Elektromehaničar</item>
+        <item>Elektrotehničar</item>
+        <item>Računalni tehničar u strojarstvu</item>
+        <item>Strojobravar</item>
+        <item>Tehničar za elektroenergetiku</item>
+        <item>Tehničar za mehatroniku</item>
+        <item>Tehničar za računalstvo</item>
+        <item>Tokar</item>
     </string-array>
     <string-array name="godina">
-        <item >1</item>
-        <item >2</item>
-        <item >3</item>
-        <item >4</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
+
+    <string name="title_activity_dialog">DialogActivity</string>
 
 </resources>
