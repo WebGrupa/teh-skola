@@ -1,3 +1,4 @@
+/**
 package net.tehnickaskola;
 
 import android.content.Context;
@@ -46,3 +47,4 @@ public class ImageAdapter2 extends BaseAdapter {
         		R.drawable.testovi
     };
 }
+*/

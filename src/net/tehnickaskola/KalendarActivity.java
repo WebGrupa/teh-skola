@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
-import android.widget.GridView;
 import android.widget.ListView;
 
 public class KalendarActivity extends Activity {
@@ -14,8 +13,7 @@ public class KalendarActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_kalendar);
 		
-		GridView gridview1 = (GridView) findViewById(R.id.gridview1);
-		gridview1.setAdapter(new ImageAdapter(this));
+		
 		
 ListView listView4 = (ListView) findViewById(R.id.listView4);
         

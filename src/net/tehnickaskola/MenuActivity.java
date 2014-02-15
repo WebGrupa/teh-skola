@@ -5,9 +5,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 
 public class MenuActivity extends Activity {
@@ -15,34 +16,50 @@ public class MenuActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_menu);
-	
-		GridView gridview = (GridView) findViewById(R.id.gridview);
-		gridview.setAdapter(new ImageAdapter(this));
 		
-		gridview.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-				switch(position){
-				case 0:                 
-					startActivity(new Intent(MenuActivity.this, KalendarActivity.class));            
-	                        break;                    
-	                case 1:                   
-	                	startActivity(new Intent(MenuActivity.this, ObavijestiActivity.class));  
-	                                  break;    
+	
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN); 
+		setContentView(R.layout.activity_menu);
+				 
 
-	                case 2: 
-	                	startActivity(new Intent(MenuActivity.this,RasporedActivity.class));
-	                break;
-	                
-	                case 3: 
-		                startActivity(new Intent(MenuActivity.this,TestoviActivity.class));
-		                break;
-				} 
-
-
-	        }     
-	    }); 
-	   }   
+	Button raspored = (Button) findViewById(R.id.button2);
+	  
+	  raspored.setOnClickListener(new OnClickListener() {
+	   
+	   public void onClick(View v) {
+	    // TODO Auto-generated method stub
+	    Intent intent = new Intent(MenuActivity.this, KalendarActivity.class);
+	    startActivity(intent);
+	   
+	   }
+	  });
+ 
+Button kalendar = (Button) findViewById(R.id.button3);
+	  
+	  kalendar.setOnClickListener(new OnClickListener() {
+	   
+	   public void onClick(View v) {
+	    // TODO Auto-generated method stub
+	    Intent intent = new Intent(MenuActivity.this, RasporedActivity.class);
+	    startActivity(intent);
+	   
+	   }
+	  });
+	  
+Button testovi = (Button) findViewById(R.id.button4);
+	  
+	  testovi.setOnClickListener(new OnClickListener() {
+	   
+	   public void onClick(View v) {
+	    // TODO Auto-generated method stub
+	    Intent intent = new Intent(MenuActivity.this, TestoviActivity.class);
+	    startActivity(intent);
+	   
+	   }
+	  });
+}
+	   
 
 	
 				
